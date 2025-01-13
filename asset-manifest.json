@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/www.github.com/AnexAntony278.github.io/show-off/static/js/main.9a039891.js",
-    "index.html": "/www.github.com/AnexAntony278.github.io/show-off/index.html",
-    "main.9a039891.js.map": "/www.github.com/AnexAntony278.github.io/show-off/static/js/main.9a039891.js.map"
+    "main.js": "/show-off/static/js/main.9a039891.js",
+    "index.html": "/show-off/index.html",
+    "main.9a039891.js.map": "/show-off/static/js/main.9a039891.js.map"
   },
   "entrypoints": [
     "static/js/main.9a039891.js"
