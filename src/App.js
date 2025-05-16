@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { HeroPage } from './Components/HeroPage'
 import { AboutPage } from './Components/AboutPage'
 import { ContactPage } from './Components/ContactPage'
 import { ControlBar } from './Components/ControlBar'
 import { Cursor } from "./Components/Cursor";
 import { ColorSchemes } from "./Themes";
-import '../src/';
+import './style.css';
 
 export const App = () => {
     const [theme, setTheme] = useState({ lightMode: false, colorScheme: 0 });

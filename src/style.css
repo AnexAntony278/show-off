@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: OCRAE;
-  src: url('./assets/fonts/OCRA.TTF');
+  src: url('../public/assets/fonts/OCRA.TTF');
 }
 
 * {
@@ -55,7 +55,6 @@ h2 {
 
 p {
   font-family: 'OCRAE', 'Bebas Neue';
-  /* font-size: clamp(15px,16px,25px); */
   line-height: 1.1;
 }
 
