@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { HeroPage } from './Components/HeroPage'
-import { AboutPage } from './Components/AboutPage'
-import { ContactPage } from './Components/ContactPage'
+import { HeroPage } from './Pages/HeroPage'
+import { AboutPage } from './Pages/AboutPage'
+import { ContactPage } from './Pages/ContactPage'
 import { ControlBar } from './Components/ControlBar'
 import { Cursor } from "./Components/Cursor";
 import { ColorSchemes } from "./Themes";

@@ -1,6 +1,7 @@
 import React from "react";
 import { ToggleButton as ThemeButton } from './ToggleButton'
 import { ColorSchemes } from "../Themes";
+
 export class ControlBar extends React.Component {
     constructor(props) {
         super(props)
@@ -28,7 +29,7 @@ class NavBar extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            pages: ['home', 'about', 'contact',],
+            pages: ['home', 'about', 'contact', 'contact'],
             selectedIndex: 0
         }
     }
@@ -91,7 +92,7 @@ class NavItem extends React.Component {
         const selected = this.props.isSelected;
         return (
             <div className="navItem" style={{
-                borderRadius: "20px", width: "clamp(25%,30%,30%)", padding: "4px 0px",
+                borderRadius: "20px", padding: "5px clamp(1.04vw, 4vw, 60px)",
                 backgroundColor: selected ? ColorSchemes.secondaryOf(this.props.theme) : ColorSchemes.primaryOf(this.props.theme),
                 color: selected ? ColorSchemes.primaryOf(this.props.theme) : ColorSchemes.secondaryOf(this.props.theme),
                 display: 'flex', alignItems: 'center', justifyContent: "center"
