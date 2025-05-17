@@ -63,6 +63,7 @@ p {
   height: 4em;
   width: 4em;
   transform: translate(-50%, -50%);
+  transform-origin: top left;
   border-radius: 100px;
   background-color: rgba(0, 0, 0, 0);
   backdrop-filter: invert();
@@ -80,7 +81,7 @@ p {
   }
 
   50% {
-    scale: 125%;
+    scale: 150%;
   }
 
   100% {

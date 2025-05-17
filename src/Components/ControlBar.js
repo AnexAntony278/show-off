@@ -3,9 +3,7 @@ import { ToggleButton as ThemeButton } from './ToggleButton'
 import { ColorSchemes } from "../Themes";
 
 export class ControlBar extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+
     changeLightMode = () => {
         this.props.setTheme({
             lightMode: !this.props.theme.lightMode,
@@ -29,7 +27,7 @@ class NavBar extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            pages: ['home', 'about', 'contact', 'contact'],
+            pages: ['home', 'about', 'contact'],
             selectedIndex: 0
         }
     }
@@ -38,10 +36,11 @@ class NavBar extends React.Component {
         const pagesOffsetTop = []
         this.state.pages.map((pagename) => {
             pagesOffsetTop.push(document.getElementById(`${pagename}-page`).offsetTop - extraScrollvalue)
-        }); pagesOffsetTop.push(2000);
+        });
+        pagesOffsetTop.push(2000);
         window.addEventListener('scroll', () => {
             for (let i = pagesOffsetTop.length - 2; i >= 0; i--) {
-                if (pagesOffsetTop[i] <= window.scrollY && pagesOffsetTop[i + 1] > window.scrollY && i != this.state.selectedIndex) {
+                if (pagesOffsetTop[i] <= window.scrollY && pagesOffsetTop[i + 1] > window.scrollY && i !== this.state.selectedIndex) {
                     this.setState({ selectedIndex: i });
                     break;
                 }
@@ -85,9 +84,6 @@ class NavBar extends React.Component {
 
 
 class NavItem extends React.Component {
-    constructor(props) {
-        super(props)
-    }
     render() {
         const selected = this.props.isSelected;
         return (
