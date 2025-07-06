@@ -2,11 +2,13 @@
   "name": "anex-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AnexAntony278.github.io/show-off",
+  "homepage": "https://AnexAntony278.github.io",
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "express": "^4.21.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-popper": "^2.3.0",
     "react-scripts": "5.0.1"
   },
   "scripts": {
